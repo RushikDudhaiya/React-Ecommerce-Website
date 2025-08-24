@@ -15,7 +15,6 @@ const CategoryProduct = () => {
     const res = await axios.get(`https://fakestoreapi.in/api/products/category?type=${category}`);
     const data = res.data.products;
     setSearchData(data)
-    console.log(data);
   }
 
   useEffect(() => {

@@ -11,8 +11,7 @@ import emptyCart from '../assets/empty-cart.png'
 const Cart = ({ location, getLocation }) => {
   const { cartItem, updateQuantity, deleteItem } = useCart();
   const totalPrice = cartItem.reduce((total, item) =>
-    total + item.price *  item.quantity, 0)
-
+    total + item.price * item.quantity, 0)
   const { user } = useUser()
   const navigate = useNavigate()
 
